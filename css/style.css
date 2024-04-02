@@ -1,0 +1,293 @@
+:root{
+    --main-color: #f3f6f6; 
+}
+body{
+    background-image:url(../img/sunflower.jpg);
+    background-size: 250px;
+}
+.wrapper{
+    max-width:1000px;
+    margin: 200px auto 0;
+    display: grid;
+    grid-template-columns: 250px 1fr 124px;
+    gap: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        grid-template-columns: 280px 1fr;
+    }
+}
+@media screen and (max-width: 480px) {
+    .wrapper {
+        grid-template-columns:1fr;
+    }
+    hi{
+        font-size: 60px;
+    }
+}
+.wrapper > div{
+    background-color: white;
+    border-radius: 15px;
+}
+#col1, #col3 {
+    padding: 20px;
+}
+#col2{
+    padding: 40px;
+}
+#profile{
+    width: 100%;
+    margin-top: -160px;
+    border-radius: 10px;
+}
+h1, h2{
+    font-family: "roboto slab", serif;
+}
+h1{
+    font-size: 26px;
+    font-weight: 500;
+}
+h2{
+    font-size: 36px;
+    font-weight: 700px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h3,h4 {
+    font-family: "Poppins", sans-serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 2em;
+}
+h2{
+    font-size: 40px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.cards > div{
+    border-radius: 12px;
+    padding: 20px 20px 15px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+#cards1, #cards4{
+    background-color: #fff4f4;
+}
+#cards2,#cards3 {
+    background-color: #eef5fa;
+}
+#col3 ul{
+    list-style: none;
+    padding-left: 0px;
+}
+#col3 ul li{
+    background:var(--main-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 84px;
+    height: 84px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#col3 ul li svg{
+    margin: 0 auto;
+}
+#col3 ul li:hover{
+    background: #1b74e4;
+}
+#about{
+    width: 40px;
+    height: 40px;
+}
+#Resumen{
+    width: 55px;
+    height: 55px;
+}
+#Work{
+    width: 40px;
+    height: 40px;
+}
+#Blogs{
+    width: 35px;
+    height: 35px;
+}
+#Contact{
+    width: 40px;
+    height: 40px;
+}
+#col3 ul li:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px;
+}
+#col3 ul li:hover{
+    color:#fff;
+}
+#col3 ul li:nth-child(1):before{
+    background-image: url(../img/user.svg);
+}
+#col3 ul li:nth-child(1):hover:before{
+    background-image: url(../img/user-white.svg);
+}
+#col3 ul li:nth-child(2):before{
+    background-image: url(../img/resumen-black.svg);
+}
+#col3 ul li:nth-child(2):hover:before{
+    background-image: url(../img/resumen-white.svg);
+}
+#col3 ul li:nth-child(3):before{
+    background-image: url(../img/work-black.svg);
+}
+#col3 ul li:nth-child(3):hover:before{
+    background-image: url(../img/work-white.svg);
+}
+#col3 ul li:nth-child(4):before{ 
+    background-image: url(../img/blogger-black.svg);
+}
+#col3 ul li:nth-child(4):hover:before{
+    background-image: url(../img/blogger-white.svg);
+}
+#col3 ul li:nth-child(5):before{
+    background-image: url(../img/contact-black.svg); 
+}
+#col3 ul li:nth-child(5):hover:before{
+    background-image: url(../img/contact-white.svg);
+}
+#subheader{
+    display: inline-block;
+    font-weight: 500;
+    padding: 5px 20px;
+    background-color:var(--main-color);
+    border-radius: 5px;
+    justify-content: center;
+    font-family: "poppins", sans-serif;
+}
+#col1{
+    text-align: center;
+}
+#col1 ul{
+    list-style: none;
+    padding-left: 0px;
+}
+#col1 ul li{
+    display: inline-block;
+}
+#col1 ul li a{
+    background:var(--main-color);
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+#col1 ul li a:hover{
+    background: #1b74e4;
+}
+#col1 ul li a span{
+    display: none;
+}
+#col1 ul li a:before{
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#col1 ul li.facebook a:before{
+    background-image: url(../img/facebook-color.svg);
+}
+#col1 ul li.facebook a:hover:before{
+    background-image: url(../img/facebook-white.svg);
+}
+#col1 ul li.twitter a:before{
+    background-image: url(../img/twitter-color.svg);
+}
+#col1 ul li.twitter a:hover:before{
+    background-image: url(../img/twitter-white.svg);
+}
+#col1 ul li.instagram a:before{
+    background-image: url(../img/instagram-color.svg);
+}
+#col1 ul li.instagram a:hover:before{
+    background-image: url(../img/instagram-white.svg);
+}
+#col1 ul li.linkedin a:before{
+    background-image: url(../img/linkedin-color.svg);
+}
+#col1 ul li.linkedin a:hover:before{
+    background-image: url(../img/linkedin-white.svg);
+}
+.personal-info{
+    background: var(--main-color);
+    padding: 20px 30px;
+    border-radius: 16px;
+}
+.item + .item{
+    border-top:1px solid #cecece;
+    margin-top: 20px;
+}
+.item{
+    display:grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    text-align: center;
+}
+.item:before{
+    content:'';
+    width: 40px;
+    height: 40px;
+    grid-row:span 2;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+.item:hover:before{
+    background-color:#1b74e4;
+}
+.item h5{
+    margin:0;
+}
+.item.phone:before{
+    background-image: url(../img/cellphone-color.svg);
+}
+.item.phone:hover:before{
+    background-image: url(../img/cellphone-white.svg);
+}
+.item.email:before{
+    background-image: url(../img/email-color.svg);
+}
+.item.email:hover:before{
+    background-image: url(../img/email-white.svg);
+}
+.item.location:before{
+    background-image: url(../img/location-color.svg);
+}
+.item.location:hover:before{
+    background-image: url(../img/location-white.svg);
+}
+.item.birthday:before{
+    background-image: url(../img/calendar-color.svg);
+}
+.item.birthday:hover:before{
+    background-image: url(../img/calendar-white.svg);
+}
