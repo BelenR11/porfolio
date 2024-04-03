@@ -97,11 +97,6 @@ h2{
     background:var(--main-color);
     border-radius: 8px;
     margin-bottom: 10px;
-    width: 84px;
-    height: 84px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 #col3 ul li svg{
     margin: 0 auto;
@@ -109,65 +104,55 @@ h2{
 #col3 ul li:hover{
     background: #1b74e4;
 }
-#about{
-    width: 40px;
-    height: 40px;
+#col3 ul li a{
+    text-decoration: none;
+    width: 84px;
+    height: 84px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-#Resumen{
-    width: 55px;
-    height: 55px;
-}
-#Work{
-    width: 40px;
-    height: 40px;
-}
-#Blogs{
-    width: 35px;
-    height: 35px;
-}
-#Contact{
-    width: 40px;
-    height: 40px;
-}
-#col3 ul li:before {
+#col3 ul li a:before {
     content: '';
+    display: block;
     width: 30px;
     height: 30px;
     background-size: 30px;
     background-repeat: no-repeat;
     margin: 0 auto 10px;
 }
-#col3 ul li:hover{
+#col3 ul li:hover a{
     color:#fff;
 }
-#col3 ul li:nth-child(1):before{
+#col3 ul li.about a:before{
     background-image: url(../img/user.svg);
 }
-#col3 ul li:nth-child(1):hover:before{
+#col3 ul li.about a:hover:before{
     background-image: url(../img/user-white.svg);
 }
-#col3 ul li:nth-child(2):before{
+#col3 ul li.resume a:before{
     background-image: url(../img/resumen-black.svg);
 }
-#col3 ul li:nth-child(2):hover:before{
+#col3 ul li.resume a:hover:before{
     background-image: url(../img/resumen-white.svg);
 }
-#col3 ul li:nth-child(3):before{
+#col3 ul li.works a:before{
     background-image: url(../img/work-black.svg);
 }
-#col3 ul li:nth-child(3):hover:before{
+#col3 ul li.works a:hover:before{
     background-image: url(../img/work-white.svg);
 }
-#col3 ul li:nth-child(4):before{ 
+#col3 ul li.blog a:before{ 
     background-image: url(../img/blogger-black.svg);
 }
-#col3 ul li:nth-child(4):hover:before{
+#col3 ul li.blog a:hover:before{
     background-image: url(../img/blogger-white.svg);
 }
-#col3 ul li:nth-child(5):before{
+#col3 ul li.contact a:before{
     background-image: url(../img/contact-black.svg); 
 }
-#col3 ul li:nth-child(5):hover:before{
+#col3 ul li.contact a:hover:before{
     background-image: url(../img/contact-white.svg);
 }
 #subheader{
